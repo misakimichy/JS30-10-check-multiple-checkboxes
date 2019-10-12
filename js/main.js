@@ -9,10 +9,8 @@
         if(e.shiftKey && e.currentTarget.checked) {
             // loop through every checkbox
             checkboxes.forEach(checkbox => {
-                console.log(checkbox);
                 if (checkbox === e.currentTarget || checkbox === lastChecked) {
                     inBetween = !inBetween;
-                    console.log('check in between');
                 }
                 if (inBetween) {
                     checkbox.checked = true;
