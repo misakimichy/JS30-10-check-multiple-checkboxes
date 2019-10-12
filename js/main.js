@@ -1,4 +1,3 @@
-
 (function(){
     const checkboxes = document.querySelectorAll("input[type='checkbox']");
 
@@ -7,7 +6,6 @@
         // check if they had the shift key down
         let inBetween = false;
         if(e.shiftKey && e.currentTarget.checked) {
-            // loop through every checkbox
             checkboxes.forEach(checkbox => {
                 if (checkbox === e.currentTarget || checkbox === lastChecked) {
                     inBetween = !inBetween;

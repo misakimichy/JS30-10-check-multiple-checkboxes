@@ -22,7 +22,6 @@ body {
 
 label {
     margin: 10px;
-    flex: 1;
 }
 
 input:checked + label {
